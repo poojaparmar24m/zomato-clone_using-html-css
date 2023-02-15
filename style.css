@@ -1,0 +1,434 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero_section{
+    background-image:url(./images/heroSectionBackground.png);
+    background-position: center;
+    background-size:cover;
+    color: white;
+    min-height: 59vh;
+    opacity: 0.10px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 15%;
+    height: 65px;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+.Navbar_group{
+    display: flex;
+    gap: 30px;
+}
+.Navbar_group a{
+    font-size: 17px;
+    font-weight: 300;
+}
+.Navbar_group .user_icon{
+     width:25px;
+    height: 25px;
+    border-radius:100%;
+    border: 1px solid white;
+     display:flex;
+    justify-content: center;
+    align-items: center; 
+    display: none;
+}
+.logo_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:40vh;
+    gap: 30px;
+}
+.logo_image{
+    width:250px;
+    height: auto;
+}
+.logo_container_head{
+    font-size: 35px;
+    font-weight:300;
+    text-align: center;
+}
+.input_container{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+   width: 50%;
+}
+.location{
+    display: flex;
+    width: 35%;
+    gap: 8px;
+}
+.search{
+    display: flex;
+    width: 65%;
+    gap: 10px;
+}
+.input_search{
+    width:90%;
+    font-size:15px;
+    border: none;
+    font-weight: 300;
+}
+.input_location{
+    padding: 5px;
+    border: none;
+    border-right: 2px solid #e0e0e0;
+    font-size: 15px;
+    width: 90%;
+    font-weight: 300;
+}
+.location_anchor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location_icon{
+    color:rgb(234, 121, 121);
+    font-size: 25px;
+}
+.search_img{
+    height: 20px;
+    width: 20px;
+}
+
+/* Media query for hero section */
+
+@media only screen and (max-width:850px){
+    .Navbar_group .user_icon{
+        display: flex;
+    }
+    .navbar_group_anchor{
+        display: none;
+    }
+    .hero_section{
+        min-height:63vh;
+    }
+    .logo_image{
+        padding-top: 17px;
+    }
+    .logo_container{
+        flex-direction: column;
+         min-height:45vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_container_head{
+        font-size: 23px;
+        font-weight:300;
+        text-align: center; 
+    }
+    .input_container{
+        width: 97%;
+    }
+}
+
+
+/* offer_card */
+.container{
+    margin: 3rem auto;
+    width:75%;
+}
+.card_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    flex-wrap: wrap;
+}
+.offer_card_img{
+    width:520px;
+    height:170px;
+    object-fit: cover;
+   object-position: center;
+}
+.offer_card{
+    border: 1px solid #e0e0e0;
+    border-radius:12px;
+    overflow: hidden;
+    transition: all 500ms ease;
+    margin-right:12px;
+
+}
+.offer_card_content{
+    padding:10px 15px;
+}
+.offer_card_content h5{
+    font-size:18px;
+    font-weight:400;
+   margin-bottom:2px;
+}
+.offer_card_conten p{
+    font-size:12px;
+   color:#4F4F4F;
+}
+.offer_card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* media query for offer_card */
+@media only screen and (max-width:500px){
+    .offer_card_img{
+        width:350px;
+        height:170px;
+       object-fit: cover;
+       object-position: center;
+    }
+    .card_section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.container{
+    margin: 3rem auto;
+    width:75%;
+}
+.collaction{
+    padding:20px 2rem;
+    cursor: pointer;
+}
+.collaction h1{
+    font-weight: 400;
+    font-size: 35px;
+}
+.collaction_header_content{
+    display: flex;
+    justify-content:space-between;
+}
+.collaction_header_content span{
+    font-size:17px;
+    font-weight: 300;
+}
+.collaction_header_content .collaction_span{
+    color: #FF7E8B;
+    cursor: pointer;
+    font-size: 17px;
+}
+.collaction_image_content{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px; 
+    gap: 13px;
+    flex-wrap: wrap;
+}
+.collaction_image_content .card{
+    background-size: cover;
+    background-position:center;
+    height: 320px;
+    min-width: 250px;
+    position: relative;
+    margin-top: 15px;
+    border-radius: 10px;
+    
+}
+.card1{
+    background-image: url(./images/collection1.jpg);
+}
+.card2{
+    background-image: url(./images/collection2.jpg);
+}
+.card3{
+    background-image: url(./images/collection3.jpg);
+}
+.card4{
+    background-image: url(./images/collection4.jpg);
+}
+.card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0,0.9) 0%, rgba(0, 0, 0,0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+    z-index: 5;
+}
+.card .content{
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+    padding:7px;
+    z-index: 6;
+}
+.content h4,span{
+    font-weight: 300;
+    font-size: 17px;
+    margin-top: 10px;
+}  
+
+/* media query for collaction */
+@media only screen and (max-width:900px){
+    .container{
+        width: 90%;
+     }
+     .collaction h1{
+        font-size: 33px;
+     }
+     .collaction_header_content{
+        display: flex;
+        justify-content:space-between;
+        gap: 10px;
+    }
+    .collaction_header_content span{
+        font-size:15px;
+        font-weight: 300;
+    }
+    .collaction_header_content .collaction_span{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:500px){
+    .collaction h1{
+        font-size: 30px;
+     }
+    .collaction_header_content span{
+        font-size:14px;
+        font-weight: 300;
+    }
+    .collaction_header_content .collaction_span{
+        font-size: 14px;
+    }
+}
+
+.container{
+    margin: 3rem auto;
+    width:75%;
+}
+.localities{
+    padding: 10px 2rem;
+    cursor: pointer;
+}
+.localities .heading{
+    font-size: 33px;
+   font-weight: 300;
+    padding: 5px;
+}
+.localities .heading b{
+    font-weight: 400;
+}
+.localities_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.localities_box{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid  #e0e0e0;
+    width:340px;
+    padding:10px 8px;
+    
+}
+.localities_content h5{
+    font-size:19px;
+    font-weight: 300;
+    padding:3px;
+}
+.localities_content p{
+    font-size:15px;
+    font-weight: 300;
+    padding:3px;
+}
+.localites_icon{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.localites_icon i{
+    width: 15px;
+    height:15px;
+    font-size: 10px;
+    color:#4F4F4F;
+   margin:7px;
+}
+.localities_box1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid  #e0e0e0;
+    width:340px;
+    padding:10px 8px;
+}
+.localities_box1 .localities_more{
+    font-size:17px;
+    font-weight: 400;
+   padding: 20px 5px  20px 0;
+}
+.localities_box1 .localites_icon_down{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.localites_icon_down i{
+    width:25px;
+    height:25px;
+    font-size: 13px;
+    color:#4F4F4F;
+     padding: 7px;
+}
+
+/* media query for  localities */
+@media only screen and (max-width:900px){
+    .container{
+        width: 90%;
+    }
+    .localities .heading{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:730px){
+    .container{
+        width: 90%;
+    }
+    .localities_content h5{
+        font-size: 16px;
+    }
+    .localities_content p{
+        font-size: 13px;
+    }
+    .localities .heading{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width:500px){
+    .container{
+        width: 95%;
+    } 
+    .localities_content h5{
+        font-size: 12px;
+    }
+    .localities_content p{
+        font-size: 11px;
+    }
+    .localities_box1 .localities_more{
+        padding: 10px 5px  10px 0;
+        font-size:15px;
+    }
+    .localities .heading{
+        font-size: 28px;
+    }
+}
