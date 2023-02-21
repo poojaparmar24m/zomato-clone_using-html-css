@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .hero_section{
-    background-image:url(images/heroSectionBackground.png);
+    background-image:url(./images/heroSectionBackground.png);
     background-position: center;
     background-size:cover;
     color: white;
